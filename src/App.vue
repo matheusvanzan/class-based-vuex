@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    contador: {{ contador }}<hr>
+    dcontador: {{ contador }}<hr>
     delta: <input type="text" v-model="delta"><br>
     <button @click="incrementar">+</button>
     <button @click="decrementar">-</button>
@@ -9,13 +9,23 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+import { getModule } from 'vuex-module-decorators';
+import { ContadorStore } from './store'
 
 @Component
 export default class App extends Vue {
+  contadorStore = getModule(ContadorStore, this.$store)
   delta = 0
-  get contador() { return this.$store.getters.contador }
-  incrementar() { this.$store.dispatch('incrementar', this.delta) }
-  decrementar() { this.$store.dispatch('decrementar', this.delta) }
+
+  get contador() {
+    return this.contadorStore.contador
+  }
+  incrementar() { 
+    this.contadorStore.incrementar(this.delta)
+  }
+  decrementar() { 
+    this.contadorStore.decrementar(this.delta)
+  }
 }
 </script>
 

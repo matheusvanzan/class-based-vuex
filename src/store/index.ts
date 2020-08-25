@@ -7,7 +7,7 @@ import { Module, VuexModule, Mutation, Action } from 'vuex-module-decorators'
 
 
 
-@Module
+@Module({ })
 export class ContadorStore extends VuexModule {
   _contador = 0
 
