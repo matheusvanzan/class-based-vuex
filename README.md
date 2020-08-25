@@ -2,8 +2,7 @@
 
 Projeto criado para exemplificação em um post do blog umcodigo.com
 
-https://github.com/championswimmer/vuex-module-decorators
-![contador]()
+![contador](https://github.com/championswimmer/vuex-module-decorators)
  
 ## Project setup
 ```
