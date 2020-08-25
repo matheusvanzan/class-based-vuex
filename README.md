@@ -1,5 +1,10 @@
-# frontend
+# Class based Vuex
 
+Projeto criado para exemplificação em um post do blog umcodigo.com
+
+https://github.com/championswimmer/vuex-module-decorators
+![contador]()
+ 
 ## Project setup
 ```
 npm install
