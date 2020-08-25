@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    dcontador: {{ contador }}<hr>
+    contador: {{ contador }}<hr>
     delta: <input type="text" v-model="delta"><br>
     <button @click="incrementar">+</button>
     <button @click="decrementar">-</button>
