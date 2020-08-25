@@ -1,6 +1,6 @@
 # Class based Vuex
 
-Aplicação de exemplo para utilização do (vuex-module-decorators)[https://github.com/championswimmer/vuex-module-decorators] publicada em https://umcodigo.com/como-utilizar-o-vuex-com-classes
+Aplicação de exemplo para utilização do [vuex-module-decorators](https://github.com/championswimmer/vuex-module-decorators) publicada em https://umcodigo.com/como-utilizar-o-vuex-com-classes
 
 ![contador](https://umcodigo.com/wp-content/uploads/2020/08/contador.gif)
  
